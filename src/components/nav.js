@@ -16,45 +16,28 @@ export default function Navi() {
             <h1 className="appTitle">Bookstore CMS</h1>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/books">Books</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/users">Users</Link>
+                <Link to="/categories">Categories</Link>
               </li>
             </ul>
           </nav>
+          <span><img src=""></img></span>
         </header>
         
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/books">
+            <Books />
           </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
+          <Route path="/categories">
+            <Categories />
           </Route>
         </Switch>
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
