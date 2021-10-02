@@ -19,7 +19,7 @@ const Navi = () => {
   return (
     <nav className="Navi">
       <ul className="left-nav">
-        <h1>BookStore CMS</h1>
+        <h1>Bookstore CMS</h1>
         {links.map((link) => (
           <li className="left-nav-li" key={link.id}>
             <NavLink to={link.path} className="left-nav-a" activeClassName="active-link" exact>
