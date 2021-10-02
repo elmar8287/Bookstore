@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## [Live demo](). (not deployed jet)
 
-![Screen Shot](./src/screen-shot.PNG)
+![Screen Shot](./src/screenshot.PNG)
 
 # Built With
 - React
