@@ -6,7 +6,6 @@ import InputBook from './InputBook';
 const BookContainer = () => (
   <main>
     <Navi />
-    <BookList />
     <div>
       <BookList />
       <InputBook />
