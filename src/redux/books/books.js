@@ -10,7 +10,7 @@ export const getBooks = (payload) => ({
 });
 
 export const loaded = () => async (dispatch) => {
-  const getFetch = await fetch('')
+  const getFetch = await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/OWUPa39kEf5J2wbPr5QH/books')
     .then((response) => response.json());
   const getFetchId = Object.keys(getFetch);
   const formated = [];
@@ -23,7 +23,7 @@ export const loaded = () => async (dispatch) => {
 };
 
 export const addBook = (payload) => async (dispatch) => {
-  const adding = await fetch('', {
+  const adding = await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/OWUPa39kEf5J2wbPr5QH/books', {
     method: 'Post',
     headers: {
       'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ export const addBook = (payload) => async (dispatch) => {
 };
 
 export const removeBook = (id) => async (dispatch) => {
-  const removing = await fetch(``, {
+  const removing = await fetch(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/OWUPa39kEf5J2wbPr5QH/books/${id}`, {
     method: 'Delete',
     headers: {
       'Content-Type': 'application/json',
