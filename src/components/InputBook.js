@@ -26,7 +26,8 @@ function InputBook() {
     };
     dispatch(addBook(payload));
   };
-  const { title, author, category } = inputBook;
+
+  const { title, category } = inputBook;
   return (
     <div>
       <h2>ADD NEW BOOK</h2>
@@ -38,18 +39,11 @@ function InputBook() {
           value={title}
           onChange={onChange}
         />
-        <input
-          name="author"
-          type="text"
-          placeholder="Book author"
-          value={author}
-          onChange={onChange}
-        />
         <select name="category" id="categories" value={category} onChange={onChange}>
-          <option value="1st category">1st category</option>
-          <option value="2nd category">2nd category</option>
-          <option value="3d category">3d category</option>
-          <option value="4th category">4th category</option>
+          <option value="First Category">first category</option>
+          <option value="Second Category">second category</option>
+          <option value="Third Category">third category</option>
+          <option value="Fourth Category">fourth category</option>
         </select>
         <button type="button" onClick={handleSubmit}>ADD BOOK</button>
       </form>

@@ -1,12 +1,12 @@
-import './App.css';
-import BookContainer from './components/BookContainer';
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from './redux/configureStore';
+import Navi from './components/nav';
 
-function App() {
-  return (
-    <div>
-      <BookContainer />
-    </div>
-  );
-}
+const App = () => (
+  <Provider store={store}>
+    <Navi />
+  </Provider>
+);
 
 export default App;
