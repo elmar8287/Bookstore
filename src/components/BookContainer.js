@@ -1,16 +1,26 @@
-import React from 'react';
-import Navi from './nav';
+import { Route, Switch } from 'react-router-dom';
 import BookList from './BookList';
 import InputBook from './InputBook';
+import Categories from '../redux/categories/categories';
+import Navi from './nav';
 
-const BookContainer = () => (
-  <main>
-    <Navi />
-    <div>
-      <BookList />
-      <InputBook />
-    </div>
-  </main>
-);
+function BookContainer() {
+  return (
+    <>
+      <Navi />
+      <Switch>
+        <Route exact path="/">
+          <div>
+            <BookList />
+            <InputBook />
+          </div>
+        </Route>
+        <Route path="/categories">
+          <Categories />
+        </Route>
+      </Switch>
+    </>
+  );
+}
 
 export default BookContainer;
