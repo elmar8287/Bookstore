@@ -1,44 +1,36 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './navi.css';
-import Books from '../redux/books/books';
-import Categories from '../redux/categories/categories';
 
-export default function Navi() {
+const Navi = () => {
+  const links = [
+    {
+      id: 1,
+      path: '/',
+      text: 'BOOKS',
+    },
+    {
+      id: 2,
+      path: '/categories',
+      text: 'CATEGORIES',
+    },
+  ];
+
   return (
-    <Router>
-      <nav className="panel-pg">
-          <nav className="navi">
-            <div className="list-container">
-            <h1 className="Bookstore-CMS">Bookstore CMS</h1>
-            <ul className="menuList">
-              <li>
-                <Link to="/books">BOOKS</Link>
-              </li>
-              <li>
-                <Link to="/categories">CATEGORIES</Link>
-              </li>
-            </ul>
-            </div>
-            <div className="account"><i>user</i></div>
-          </nav>
-            
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/books">
-            <Books />
-          </Route>
-          <Route path="/categories">
-            <Categories />
-          </Route>
-        </Switch>
-      </nav>
-    </Router>
+    <nav className="Navi">
+      <ul className="left-nav">
+        <h1>BookStore CMS</h1>
+        {links.map((link) => (
+          <li className="left-nav-li" key={link.id}>
+            <NavLink to={link.path} className="left-nav-a" activeClassName="active-link" exact>
+              {link.text}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+      <div className="right-nav"></div>
+    </nav>
   );
-}
+};
+
+export default Navi;

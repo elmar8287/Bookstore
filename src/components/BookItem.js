@@ -5,37 +5,37 @@ import { removeBook } from '../redux/books/books';
 
 const BookItem = ({
   book: {
-    title, author, category, id,
+    title, category, id,
   },
 }) => {
   const dispatch = useDispatch();
   return (
-    <div className="main">
-      <div className="">
-        <li className="">{category}</li>
-        <li className="">{title}</li>
-        <li className="">Elmar Abdulkarimov</li>
-        <div className="">
-          <p className="o">Comments</p>
-          <button type="button" className="" onClick={() => dispatch(removeBook(id))}>
+    <div className="box">
+      <div className="list-left">
+        <li className="list-left-comp list-left-category">{category}</li>
+        <li className="list-left-comp list-left-title font-roboto">{title}</li>
+        <li className="list-left-comp list-left-author font-roboto">Author</li>
+        <div className="list-left-buttons">
+          <p className="list-left-button font-roboto">Comments</p>
+          <button type="button" className="list-left-button-remove" onClick={() => dispatch(removeBook(id))}>
             Delete
           </button>
-          <p className="">Edit</p>
+          <p className="list-left-button list-left-button2 font-roboto">Edit</p>
 
         </div>
       </div>
-      <div className="t">
-        <div className="">
-          <div className="" />
-          <div className="">
-            <p className="">88%</p>
-            <p className="">Completed</p>
+      <div className="list-right">
+        <div className="list-right-1">
+          <div className="oval-2" />
+          <div className="oval-3">
+            <p className="percentage">64%</p>
+            <p className="completed">Completed</p>
           </div>
         </div>
-        <div className="">
-          <li className="">Current Chapter</li>
-          <li className="">Chapter 5</li>
-          <button type="button" className="">Update progress</button>
+        <div className="list-right-2">
+          <li className="list-right-comp font-roboto">Current Chapter</li>
+          <li className="list-right-comp1 font-roboto">Chapter 17</li>
+          <button type="button" className="list-right-button">Update progress</button>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import BookItem from './BookItem';
 import { loaded } from '../redux/books/books';
 
-function BookList() {
+function BooksList() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(loaded());
@@ -11,7 +11,7 @@ function BookList() {
 
   const books = useSelector((state) => state.books);
   return (
-    <ul>
+    <ul className="list-container">
       {books.map((book) => (
         <BookItem
           key={book.id}
@@ -22,4 +22,4 @@ function BookList() {
   );
 }
 
-export default BookList;
+export default BooksList;

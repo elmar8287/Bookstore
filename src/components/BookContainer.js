@@ -1,5 +1,5 @@
 import { Route, Switch } from 'react-router-dom';
-import BookList from './BookList';
+import BooksList from './BooksList';
 import InputBook from './InputBook';
 import Categories from '../redux/categories/categories';
 import Navi from './nav';
@@ -10,8 +10,8 @@ function BookContainer() {
       <Navi />
       <Switch>
         <Route exact path="/">
-          <div className="books">
-            <BookList />
+          <div className="book-container">
+            <BooksList />
             <InputBook />
           </div>
         </Route>
