@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import BookItem from './BookItem';
 import { loaded } from '../redux/books/books';
 
-function BooksList() {
+function BookList() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(loaded());
@@ -22,4 +22,4 @@ function BooksList() {
   );
 }
 
-export default BooksList;
+export default BookList;
