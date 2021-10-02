@@ -10,7 +10,7 @@ function BookContainer() {
       <Navi />
       <Switch>
         <Route exact path="/">
-          <div>
+          <div className="books">
             <BookList />
             <InputBook />
           </div>
