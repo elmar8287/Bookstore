@@ -12,20 +12,22 @@ import Categories from '../redux/categories/categories';
 export default function Navi() {
   return (
     <Router>
-      <div className="main">
-        <header>
-          <nav>
-            <h1 className="appTitle">Bookstore CMS</h1>
-            <ul>
+      <nav className="panel-pg">
+          <nav className="navi">
+            <div className="list-container">
+            <h1 className="Bookstore-CMS">Bookstore CMS</h1>
+            <ul className="menuList">
               <li>
-                <Link to="/books">Books</Link>
+                <Link to="/books">BOOKS</Link>
               </li>
               <li>
-                <Link to="/categories">Categories</Link>
+                <Link to="/categories">CATEGORIES</Link>
               </li>
             </ul>
+            </div>
+            <div className="account"><i>user</i></div>
           </nav>
-        </header>
+            
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
@@ -36,7 +38,7 @@ export default function Navi() {
             <Categories />
           </Route>
         </Switch>
-      </div>
+      </nav>
     </Router>
   );
 }
