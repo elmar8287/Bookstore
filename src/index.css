@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1.681279vh 7.24vw 2.32128vh 7.32vh;
+  margin: 0 90px 0 70px;
 }
 
 .input-container {

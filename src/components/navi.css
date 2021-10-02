@@ -1,7 +1,8 @@
-.navBar {
+.Navi {
   background-color: #fff;
   padding: 1.681279vh 7.24vw 2.32128vh 7.32vh;
   display: flex;
+  margin: 0 180px 0 115px;
   align-items: baseline;
   justify-content: space-between;
   border-bottom: 2px solid #e8e8e8;
@@ -48,4 +49,5 @@
 
 .right-nav {
   color: #0290ff;
+  margin-left: 300px;
 }
