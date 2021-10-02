@@ -10,23 +10,34 @@ const BookItem = ({
 }) => {
   const dispatch = useDispatch();
   return (
-    <div>
-      <span>
-        <li>
-          {title}
-          {' '}
-          <br />
-          {author}
-          {' '}
-          <br />
-          {category}
-          {' '}
-          <br />
-          <button type="button" onClick={() => dispatch(removeBook(id))}>
+    <div className="main">
+      <div className="">
+        <li className="">{category}</li>
+        <li className="">{title}</li>
+        <li className="">Elmar Abdulkarimov</li>
+        <div className="">
+          <p className="o">Comments</p>
+          <button type="button" className="" onClick={() => dispatch(removeBook(id))}>
             Delete
           </button>
-        </li>
-      </span>
+          <p className="">Edit</p>
+
+        </div>
+      </div>
+      <div className="t">
+        <div className="">
+          <div className="" />
+          <div className="">
+            <p className="">88%</p>
+            <p className="">Completed</p>
+          </div>
+        </div>
+        <div className="">
+          <li className="">Current Chapter</li>
+          <li className="">Chapter 5</li>
+          <button type="button" className="">Update progress</button>
+        </div>
+      </div>
     </div>
   );
 };
