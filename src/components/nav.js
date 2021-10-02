@@ -6,8 +6,8 @@ import {
   Link
 } from "react-router-dom";
 import './navi.css';
-import books from '../redux/books/books';
-import categories from '../redux/categories/categories';
+import Books from '../redux/books/books';
+import Categories from '../redux/categories/categories';
 
 export default function Navi() {
   return (
