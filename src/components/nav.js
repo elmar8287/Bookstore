@@ -28,7 +28,6 @@ const Navi = () => {
           </li>
         ))}
       </ul>
-      <div className="right-nav"><i></i></div>
     </nav>
   );
 };
