@@ -2,11 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![Screen Shot]()
+![Screen Shot](./src/screen-shot.PNG)
 
 # Built With
 - React
-- Reduc
+- Redux
 
 # Getting Started
 
