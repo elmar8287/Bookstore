@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![Screen Shot](./src/screen-shot.PNG)
 
+## [Live demo](). (not deployed jet)
 # Built With
 - React
 - Redux
