@@ -1,7 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
 import BooksList from './BooksList';
 import InputBook from './InputBook';
-import Categories from '../pages/Categories';
+import Categories from '../redux/categories/categories';
 import Navi from './nav';
 
 function BookContainer() {
