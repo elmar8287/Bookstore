@@ -25,7 +25,6 @@ export default function Navi() {
               </li>
             </ul>
           </nav>
-          <span><img src=""></img></span>
         </header>
         
 

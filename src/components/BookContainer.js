@@ -6,22 +6,15 @@ import BookList from './BookList';
 import InputBook from './InputBook';
 
 const BookContainer = () => (
-  <>
+  
+  <main>
     <Navi />
-    <Switch>
-
-      <Route exact path="/">
-        <div>
-          <BookList />
-          <InputBook />
-        </div>
-
-      </Route>
-      <Route path="/categories">
-        <Categories />
-      </Route>
-    </Switch>
-  </>
+    <BookList />
+    <div>
+      <BookList />
+      <InputBook />
+    </div>
+  </main>
 );
 
 export default BookContainer;

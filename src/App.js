@@ -1,8 +1,12 @@
-import React from 'react';
-import Navi from './components/nav';
+import './App.css';
+import BookContainer from './components/BookContainer';
 
-const App = () => (
-  <Navi />
-);
+function App() {
+  return (
+    <div>
+      <BookContainer />
+    </div>
+  );
+}
 
 export default App;
