@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-## [Live demo](). (not deployed jet)
+## [Live demo](https://bookstore-abdulkae.netlify.app/). (deployed on NETLIFY)
 
 ![Screen Shot](./src/screenshot.PNG)
 
